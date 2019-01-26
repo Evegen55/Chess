@@ -1,0 +1,12 @@
+#ifndef CHESSCORE_GLOBAL_H
+#define CHESSCORE_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(CHESSCORE_LIBRARY)
+#  define CHESSCORESHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define CHESSCORESHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // CHESSCORE_GLOBAL_H
