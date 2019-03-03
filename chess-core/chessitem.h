@@ -23,6 +23,8 @@ public:
     int getPosY() const;
     void setPosY(int value);
 
+    virtual void move(char posX, int posY);
+
 signals:
 
 public slots:
