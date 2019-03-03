@@ -1,9 +1,7 @@
 #include "chessitem.h"
 
-ChessItem::ChessItem(QObject *parent,
-                     const ChessItemType& itemType,
+ChessItem::ChessItem(const ChessItemType& itemType,
                      const ChessColorType& itemColor) :
-    QObject(parent),
     itemType(itemType),
     itemColor(itemColor)
 {

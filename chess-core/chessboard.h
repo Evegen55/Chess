@@ -1,9 +1,10 @@
 #ifndef CHESSBOARD_H
 #define CHESSBOARD_H
 
+#include "chess-core_global.h"
 #include <QObject>
 
-class ChessBoard : public QObject
+class CHESSCORESHARED_EXPORT ChessBoard : public QObject
 {
     Q_OBJECT
 public:

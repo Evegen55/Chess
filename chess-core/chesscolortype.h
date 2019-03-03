@@ -1,7 +1,9 @@
 #ifndef CHESSCOLORTYPE_H
 #define CHESSCOLORTYPE_H
 
-enum class ChessColorType
+#include "chess-core_global.h"
+
+enum class CHESSCORESHARED_EXPORT ChessColorType
 {
     White,
     Black

@@ -1,16 +1,14 @@
 #ifndef CHESSITEM_H
 #define CHESSITEM_H
 
-#include <QObject>
-#include <chessitemtype.h>
-#include <chesscolortype.h>
+#include "chess-core_global.h"
+#include "chessitemtype.h"
+#include "chesscolortype.h"
 
-class ChessItem : public QObject
+class CHESSCORESHARED_EXPORT ChessItem
 {
-    Q_OBJECT
 public:
-    explicit ChessItem(QObject *parent = nullptr,
-                       const ChessItemType& itemType = ChessItemType::Knight,
+    explicit ChessItem(const ChessItemType& itemType = ChessItemType::Knight,
                        const ChessColorType& itemColor = ChessColorType::White);
 
     ChessItemType getItemType() const;
@@ -24,10 +22,6 @@ public:
     void setPosY(int value);
 
     virtual void move(char posX, int posY);
-
-signals:
-
-public slots:
 
 private:
     ChessItemType itemType;
