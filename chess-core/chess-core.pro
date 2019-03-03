@@ -25,11 +25,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-        chesscore.cpp
+        chesscore.cpp \
+    chessboard.cpp \
+    chessitem.cpp
 
 HEADERS += \
         chesscore.h \
-        chess-core_global.h 
+        chess-core_global.h \ 
+    chessboard.h \
+    chessitem.h \
+    chessitemtype.h \
+    chesscolortype.h
 
 # specifies the installation destination of the library. This
 # platform scope is generated because we created the project on Linux. By default it
